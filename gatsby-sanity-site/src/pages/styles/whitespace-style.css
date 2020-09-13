@@ -1,0 +1,14 @@
+
+
+.whitespace-container{
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
+    text-align: center;
+    color:black;
+   
+}
+
+.whitespace-container h1{
+    color:rgb(126, 125, 125);
+}
