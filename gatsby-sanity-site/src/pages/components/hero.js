@@ -1,9 +1,9 @@
-import React from 'react'
-// import Link from 'gatsby-link'
-// import Logo from '../res/logo.jpg'
+import React from "react"
+// import { StaticQuery, graphql } from "gatsby"
 import LazyHero from 'react-lazy-hero';
 
-import './../styles/hero-style.css'
+import "./../styles/hero-style.css"
+
 
 
 class Hero extends React.Component{
@@ -12,13 +12,20 @@ class Hero extends React.Component{
         // this.state = {count: 0}
 	}
 	render(){
-		return <div className='container'>
-            <LazyHero imageSrc='https://unsplash.it/2500/1200'  parallaxOffset = "20" color='orange' opacity = '0.2'>
-                    <h1>Generic Headline to Match a Generic Image</h1>
+		return <div className="hero">
+	  	<div>
+            <LazyHero imageSrc={this.props.imageurl}  parallaxOffset = "20" color='orange' opacity = '0.2'>
+                <div className = 'heroText'>
+                    <h1 className = "heroh1">{this.props.heroText}</h1>
+                    <h3>{this.props.subText}</h3>
+                </div>
+                
             </LazyHero>
-      </div>
-}
 
+      </div>
+  </div>
+}
+ 
 
 
 }

@@ -14,7 +14,7 @@ import "../styles/cards-style.css"
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 500,
+    maxWidth: 500, 
     // minWidth: 150,
     
   },
@@ -36,7 +36,7 @@ export default function MediaCard() {
 
           title="Contemplative Reptile"
         />
-        <CardContent>
+        <CardContent className = "cardContent">
           <Typography gutterBottom variant="h5" component="h2">
             Campo di Fiori, Rome
           </Typography>
@@ -46,7 +46,7 @@ export default function MediaCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
+      <CardActions className = "cardActions">
         <Button size="small" color="primary">
           Share
         </Button>
@@ -57,3 +57,5 @@ export default function MediaCard() {
     </Card>
   );
 }
+
+

@@ -1,0 +1,24 @@
+
+@font-face{
+    font-family: "Abys-Regular";
+    src: url('../res/fonts/Abys-Regular.otf'),
+    url('../res/fonts/Abys-Regular.otf'); 
+}
+
+/* .logo{
+margin:auto;
+
+} */
+
+.logo-container{
+    text-align: center;
+}
+
+.logo-container h1{
+    font-family: 'Abys-Regular', serif;
+    color: rgb(241, 194, 123);
+    font-size: 60px;
+    -webkit-text-stroke: 0.001px rgb(36, 34, 34);
+    margin: 10px;
+    letter-spacing: 5px;
+}

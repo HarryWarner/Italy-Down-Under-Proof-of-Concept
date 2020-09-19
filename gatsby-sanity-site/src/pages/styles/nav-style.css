@@ -10,22 +10,26 @@ body {
 .navbar{
   clear:both;
   overflow:auto;
-  background-color: rgba(1,1,1,1);
+  background-color: #000;
   -webkit-box-shadow: 0 8px 6px -6px #000;
   -moz-box-shadow: 0 8px 6px -6px #000;
   box-shadow: 10px 8px 6px -6px #000;
-  /* margin: auto; */
+  margin: auto; 
+  top: 0em;
+
 }
 
 .navbar nav{
   
     float: none;  
     text-align: center;
+    
 }
 .navbar a{
   text-decoration: none;
   color: rgb(184, 119, 21);
   padding: 20px;
+  /* vertical-align: super; */
 }
 .navbar a:hover{
   text-decoration: none;
@@ -40,13 +44,13 @@ ul li{
   padding:10px;
   font-size:20px; 
   font-family:raleway;
+  text-align: top;
   
   
   
 }
 @media screen and (max-width: 768px) {
   .navbar a{
-    /* display: block; */
     display: inline-block;
   }
 }

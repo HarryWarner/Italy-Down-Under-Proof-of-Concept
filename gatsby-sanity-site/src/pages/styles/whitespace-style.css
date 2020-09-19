@@ -5,10 +5,12 @@
     width: 50vw;
     padding: 10px;
     text-align: center;
-    color:black;
+    /* color:black */
+
    
 }
 
 .whitespace-container h1{
-    color:rgb(126, 125, 125);
+   color:rgb(77, 77, 77); 
+   /* background-color: #FFF; */
 }
