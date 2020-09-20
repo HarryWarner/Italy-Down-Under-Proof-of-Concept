@@ -28,11 +28,11 @@ body {
 .navbar a{
   text-decoration: none;
   color: rgb(184, 119, 21);
-  padding: 20px;
-  /* vertical-align: super; */
+  padding: 0px 30px;
+  vertical-align: super;
 }
 .navbar a:hover{
-  text-decoration: none;
+  /* text-decoration: none; */
   background-color: rgba(255, 255, 255, 0.2);
 }
 

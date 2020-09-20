@@ -5,5 +5,14 @@
     align-self: center;
     margin: auto;
     position: relative;
+    
+    
+}
 
+.content{
+    margin: auto;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
 }

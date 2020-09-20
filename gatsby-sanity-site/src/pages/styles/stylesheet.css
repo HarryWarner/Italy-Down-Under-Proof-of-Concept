@@ -5,6 +5,8 @@
 }
 body{
     background-color: #e69447;
+    min-height: 100vh;
+
 }
 
 .contentArea{
