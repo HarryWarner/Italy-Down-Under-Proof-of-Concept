@@ -34,10 +34,8 @@
     
   }
 
-  .cardContent{
-    /* background-color:#bb9654; */
-    /* color:white; */
-  } 
-  .cardActions{
-    /* background-color:#d4ba83; */
-  } 
+.links{
+  text-decoration: none;
+  color:inherit;
+  text-decoration: inherit;
+}

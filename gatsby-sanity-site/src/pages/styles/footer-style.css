@@ -1,12 +1,16 @@
 .footer-distributed {
-    background-color: #d4b78b;
+    background-color: #f19e50;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
     text-align: left;
     font: normal 16px sans-serif;
     padding: 25px 50px;
-    position: sticky;
+  }
+
+  .footer-container{
+    position: relative;
+    
   }
   
   
@@ -57,7 +61,7 @@
     display: inline-block;
     width: 35px;
     height: 35px;
-    background-color:  #b69d77;
+    background-color:  #f19e50;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;

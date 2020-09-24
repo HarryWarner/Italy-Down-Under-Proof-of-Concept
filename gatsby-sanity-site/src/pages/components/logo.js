@@ -17,7 +17,6 @@ class LogoSection extends React.Component{
 	render(){
 		return <div className="logo-container">
 
-            <section>
                 {/* <img src = {Logo} className = "logo"/> */}
                 {/* <h1>Italy DownUnder</h1> */}
                 {/* <img src = {Cap} className = "cap"></img> */}
@@ -29,7 +28,6 @@ class LogoSection extends React.Component{
                             </text>
                    
                 </svg>
-            </section>
       </div>
 }
  

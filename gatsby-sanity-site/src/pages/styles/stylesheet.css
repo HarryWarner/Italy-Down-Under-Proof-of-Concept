@@ -17,8 +17,17 @@ body{
         align-self: center;
         margin: auto;
         position: relative;
+        
     
     
+}
+
+.contentArea img{
+    margin: auto;
+}
+
+#content p {
+    padding: 20px;
 }
 
 /* h1{

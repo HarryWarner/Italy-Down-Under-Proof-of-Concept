@@ -17,11 +17,12 @@ class Navbar extends React.Component{
                 <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="">Experience</Link></li>
-                        <li><Link to="">History</Link></li>
-                        <li><Link to="">Contact</Link></li>
+                        <li><Link to="/experience-template">Experience</Link></li>
+                        <li><Link to="">Traditions</Link></li>
+                        <li><Link to="">Culture</Link></li>
+                        <li><Link to="">Food</Link></li>
+                        <li><Link to="">Music</Link></li>
                         <li><Link to="/about">About</Link></li>
-                        <li><Link to="">Blog</Link></li>
 
                     </ul>
                 </nav>

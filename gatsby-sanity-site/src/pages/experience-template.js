@@ -9,6 +9,8 @@ import Footer from './components/footer'
 import SimpleCard from './components/SimpleCard'
 import Header from './components/header'
 import ContentArea from './components/contentArea'
+import DropDown from './components/dropdown'
+
 
 import { StaticQuery, graphql } from "gatsby"
 
@@ -23,7 +25,7 @@ export default function Home() {
   return ( 
     <StaticQuery
     query={graphql`
-    query indexQuery {
+    query experienceQuery {
         sanityStory {
             storyType
             title
@@ -45,11 +47,14 @@ export default function Home() {
      {/* <Nav/> */}
     
     {/* <Hero/> */}
-    {/* <Hero imageurl = "https://unsplash.it/2500/1200" heroText = "" subText = "" hidden = "hidden"/> */}
+    <Hero imageurl = "https://unsplash.it/2500/1200" heroText = "Melbourne" subText = "cool city. lots to do." hidden = "hidden"/>
 
     <div className = "contentArea">
-    <Whitespace title = "Get Started!" subtitle = "select your city"/>
+    <Whitespace title = "Italian Experiences in Melbourne" hidden = "none">
+    </Whitespace>
+    <DropDown/>
 
+    
 
     <div className = "flexbox-container">
       <div><SimpleCard/> </div>   

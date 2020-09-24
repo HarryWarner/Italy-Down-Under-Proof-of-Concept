@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "gatsby-link";
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -7,7 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+ 
 import thumbnail from "../res/campo.jpg"
 import "../styles/cards-style.css"
 
@@ -29,7 +30,7 @@ export default function MediaCard() {
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
+     <Link to ="/experience-template" className = "links"> <CardActionArea>
         <CardMedia
           className={classes.media}
           image={thumbnail}
@@ -38,7 +39,7 @@ export default function MediaCard() {
         />
         <CardContent className = "cardContent">
           <Typography gutterBottom variant="h5" component="h2">
-            Campo di Fiori, Rome
+            Campo di Fiori, Rome 
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -46,12 +47,11 @@ export default function MediaCard() {
           </Typography>
         </CardContent>
       </CardActionArea>
+      </Link>
       <CardActions className = "cardActions">
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          
+          <Link to = "/experience-template">Select</Link>
         </Button>
       </CardActions>
     </Card>

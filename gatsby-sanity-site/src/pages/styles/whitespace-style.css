@@ -4,11 +4,14 @@
     margin: auto;
     width: 50vw;
     padding: 10px;
+    margin-top : 20px;
     text-align: center;
     /* color:black */
 
    
 }
+
+
 
 .whitespace-container h1{
    color:rgb(77, 77, 77); 

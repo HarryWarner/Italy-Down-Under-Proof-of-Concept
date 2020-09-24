@@ -20,6 +20,7 @@ class Hero extends React.Component{
                     <h3>{this.props.subText}</h3>
                 </div>
                 
+                <button type = "button" hidden = {this.props.hidden}>fgdsgds</button>
             </LazyHero>
 
       </div>

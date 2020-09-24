@@ -2,9 +2,9 @@ import React from "react"
 // import { StaticQuery, graphql } from "gatsby"
 
 import "./../styles/footer-style.css"
-import instalogo from "../res/instagram-logo.png"
-import facebooklogo from "../res/fb-logo.png"
-import pintrestlogo from "../res/pintrest-logo.png"
+import instalogo from "../res/instagram-logo-black.png"
+import facebooklogo from "../res/fb-logo-black.png"
+import pintrestlogo from "../res/pintrest-logo-black.png"
 
 
 class Footer extends React.Component{
@@ -13,7 +13,7 @@ class Footer extends React.Component{
         // this.state = {count: 0}
 	}
 	render(){
-		return <div>
+		return <div className = "footer-container">
             
             <footer class="footer-distributed">
 
