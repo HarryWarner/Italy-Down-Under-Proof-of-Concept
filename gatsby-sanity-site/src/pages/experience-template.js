@@ -6,7 +6,7 @@ import Whitespace from './components/whitespace'
 import LogoSection from './components/logo'
 import Footer from './components/footer'
 
-import SimpleCard from './components/SimpleCard'
+import SimpleCard from './components/Card'
 import Header from './components/header'
 import ContentArea from './components/contentArea'
 import DropDown from './components/dropdown'
@@ -57,12 +57,13 @@ export default function Home() {
     
 
     <div className = "flexbox-container">
-      <div><SimpleCard/> </div>   
-      <div><SimpleCard/></div>     
-      <div><SimpleCard/></div>
-      <div><SimpleCard/></div>   
-      <div><SimpleCard/></div>     
-      <div><SimpleCard/></div>
+      <div><SimpleCard title = "Story-1" description = "" link = "/story-template"/> </div>   
+      <div><SimpleCard title = "Story-1" description = "" link ="/story-template"/></div>     
+      <div><SimpleCard title = "Story-1" description = "" link = "/story-template"/></div>
+      {/* <div><SimpleCard title = "Story-1" description = "" link = "/story-template"/></div>   
+      <div><SimpleCard title = "Story-1" description = "" link = "/story-template"/></div>     
+      <div><SimpleCard title = "Story-1" description = "" link = "/story-template"/></div>
+      <div><SimpleCard title = "Story-1" description = "" link = "/story-template"/></div> */}
       
 
     </div>

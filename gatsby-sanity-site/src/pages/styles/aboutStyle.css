@@ -1,0 +1,10 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+
+}
+
+.flex-image{
+    width: 300px;
+}

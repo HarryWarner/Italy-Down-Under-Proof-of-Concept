@@ -33,15 +33,19 @@ class Footer extends React.Component{
 			<div class="footer-left">
 
 				<p class="footer-links">
-					<a class="link-1" href="#">Home</a>
+					<a class="link-1" href="/">Home</a>
 
-					<a href="#">About</a>
+					<a href="/experience-template">Experience</a>
 
-					<a href="#">Experience</a>
+					<a href="#">Tradition</a>
 
-					<a href="#">History</a>
+					<a href="#">Culture</a>
 
-					<a href="#">Contact</a>
+					<a href="#">Food</a>
+					<a href="#">Music</a>
+					<a href="/about">About</a>
+
+
 
 				</p>
 
