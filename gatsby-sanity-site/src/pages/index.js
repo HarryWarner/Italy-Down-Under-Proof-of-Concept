@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import PortableText from '@sanity/block-content-to-react'
 
 
 import Nav from './components/navigation'
@@ -15,7 +16,7 @@ import melb from './res/city_thumbs/melbourne.jpg'
 import syd from './res/city_thumbs/sydney.jpg'
 import perth from './res/city_thumbs/perth.jpg'
 import bris from './res/city_thumbs/brisbane.jpg'
-import adel from './res/city_thumbs/melbourne.jpg'
+import adel from './res/city_thumbs/adelaide.jpg'
 import darw from './res/city_thumbs/darwin.jpg'
 import hoba from './res/city_thumbs/hobart.jpg'
 
@@ -32,13 +33,12 @@ export default function Home() {
     query={graphql`
     query indexQuery {
         sanityStory {
-            storyType
             title
           }
         }
     
     `}
-  
+   
   
   render={data => (
   <div>
@@ -57,17 +57,16 @@ export default function Home() {
     <div className = "contentArea">
     <Whitespace title = "Get Started!" subtitle = "select your city"/>
 
-
+  {/* <pre>{JSON.stringify(data.sanityStory,null,2)}</pre> */}
     <div className = "flexbox-container">
-      <div><SimpleCard title = "Melbourne" description = "" link = "/experience-template" image={melb}/> </div>   
-      <div><SimpleCard title = "Sydney" description = "" link = "/experience-template" image={syd}/></div>     
-      <div><SimpleCard title = "Perth" description = "" link = "/experience-template" image={perth}/></div>
-      <div><SimpleCard title = "Brisbane" description = "" link = "/experience-template" image={bris}/></div>   
-      <div><SimpleCard title = "Adelaide" description = "" link = "/experience-template" image={adel}/></div>     
-      <div><SimpleCard title = "Darwin" description = "" link = "/experience-template" image={darw}/></div>
-      <div><SimpleCard title = "Hobart" description = "" link = "/experience-template" image={hoba}/></div>
-
-
+     
+      <div><SimpleCard title = "Melbourne" description = "" link = "/experience-template" image={melb} text = "City Text"/> </div>   
+      <div><SimpleCard title = "Sydney" description = "" link = "/experience-template" image={syd} text = "City Text"/></div>     
+      <div><SimpleCard title = "Perth" description = "" link = "/experience-template" image={perth} text = "City Text"/></div>
+      <div><SimpleCard title = "Brisbane" description = "" link = "/experience-template" image={bris} text = "City Text"/></div>   
+      <div><SimpleCard title = "Adelaide" description = "" link = "/experience-template" image={adel} text = "City Text"/></div>     
+      <div><SimpleCard title = "Darwin" description = "" link = "/experience-template" image={darw} text = "City Text"/></div>
+      <div><SimpleCard title = "Hobart" description = "" link = "/experience-template" image={hoba} text = "City Text"/></div>
     </div>
 
     

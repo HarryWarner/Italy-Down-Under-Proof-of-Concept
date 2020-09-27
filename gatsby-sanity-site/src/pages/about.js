@@ -1,5 +1,6 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import PortableText from '@sanity/block-content-to-react'
 
 import Nav from './components/navigation'
 import Hero from './components/Hero'
@@ -13,33 +14,47 @@ import ContentArea from './components/contentArea'
 import "./styles/stylesheet.css"
 import "./styles/aboutStyle.css"
 
+import doc from './test.json'
+
 export default function About() {
   return ( 
     <StaticQuery
     query={graphql`
     query aboutQuery {
-      sanityPage(title: {eq: "About"}) {
-        title
+      sanityPage {
         body {
+          _key
+          _type
           children {
+            _key
+            _type
+            marks
             text
+            
           }
         }
       }
     }
+    
+    
+    
   `}
   
+    
    
   render={data => (
   <div>
     <Header/>
     <LogoSection/>
-    <Nav/>  
+    <Nav/>   
   <br/>
   <br/>
 
     <div className = "contentArea">
-        <SectionHeading title = {data.sanityPage.title} subtitle = ""/>
+
+       
+
+
         <div id = "content">
 
           <div class="flex">
@@ -49,8 +64,21 @@ export default function About() {
           </div>
           
 
-          <p> Italy DownUnder is the new sister site of Perfect Traveller and was created to present to an Australian audience the varied and profound influences the Italian culture has had on us all DownUnder.</p>
-                {/* <p>{data.sanityPage.body.children.text}</p> */}
+        
+                {/* <pre>
+                  <h1>JSON from sanity </h1>
+                  {JSON.stringify(data.sanityPage.body, null, 1)}
+                  </pre>*/}
+                <hr></hr>
+                <pre>
+                  <h1>from local json file</h1>
+                  {JSON.stringify(data.sanityPage.body, null, 1)}
+                  </pre> 
+
+        <PortableText
+        blocks={data.sanityPage.body}
+        />
+        
         </div>
     </div>
     

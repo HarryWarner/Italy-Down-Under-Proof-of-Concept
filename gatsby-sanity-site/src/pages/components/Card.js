@@ -44,7 +44,7 @@ class Cards extends React.Component{
             <CardMedia
               style={{height: 0, paddingTop: '56.25%'}}
               image={this.props.image}
-              title="lorem ipsum"
+              title={this.props.title}
              />
 
             <CardContent className = "cardContent">
@@ -52,8 +52,7 @@ class Cards extends React.Component{
                 {this.props.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
+                {this.props.text}
             </Typography>
             </CardContent>
         </CardActionArea>

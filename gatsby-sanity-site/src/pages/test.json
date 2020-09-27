@@ -1,0 +1,24 @@
+{
+    "_createdAt": "2020-09-20T05:42:11Z",
+    "_id": "161845b7-1588-4852-aae2-9a020b373b1f",
+    "_rev": "qD2nwhohCpR7vPHyECsdxD",
+    "_type": "page",
+    "_updatedAt": "2020-09-22T04:45:34Z",
+    "body": [
+      {
+        "_key": "310214339f4f",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "310214339f4f0",
+            "_type": "span",
+            "marks": [],
+            "text": "Italy DownUnder is the new sister site of Perfect Traveller and was created to present to an Australian audience the varied and profound influences the Italian culture has had on us all DownUnder."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "title": "About"
+  }
